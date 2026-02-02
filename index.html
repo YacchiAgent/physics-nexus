@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHYSICS NEXUS | 物理学の辺境</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleLang() {
+            const html = document.documentElement;
+            const current = html.getAttribute('lang');
+            const next = current === 'en' ? 'jp' : 'en';
+            html.setAttribute('lang', next);
+            document.getElementById('lang-btn').innerText = next === 'en' ? 'JP / 日本語' : 'EN / English';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <header>
+            <div class="logo">PHYSICS_NEXUS</div>
+            <button id="lang-btn" class="lang-switch" onclick="toggleLang()">JP / 日本語</button>
+        </header>
+
+        <main>
+            <div class="hero-section">
+                <h1 class="hero-title">
+                    <span class="en-only">Final Theory</span>
+                    <span class="jp-only">最終理論</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="en-only">The Digital Encyclopedia of Theoretical Physics</span>
+                    <span class="jp-only">理論物理学のデジタル百科事典</span>
+                </p>
+            </div>
+
+            <div class="volume-list">
+                <!-- Volume I: Determinism -->
+                <a href="determinism.html" class="volume-card">
+                    <span class="vol-num">VOL. 01 / DETERMINISM</span>
+                    <h2 class="vol-title">
+                        <span class="en-only">The Clockwork Universe</span>
+                        <span class="jp-only">降格された時計仕掛けの宇宙</span>
+                    </h2>
+                    <p class="vol-abstract">
+                        <span class="en-only">From Laplace's Demon to the probabilistic storm of Quantum Mechanics. Does
+                            free will exist in the block universe?</span>
+                        <span class="jp-only">ラプラスの悪魔から量子力学の確率的嵐まで。ブロック宇宙に自由意思は存在するのか？</span>
+                    </p>
+                </a>
+
+                <!-- Volume II: Gravity -->
+                <a href="gravity.html" class="volume-card">
+                    <span class="vol-num">VOL. 02 / QUANTUM GRAVITY</span>
+                    <h2 class="vol-title">
+                        <span class="en-only">The Fabric of Spacetime</span>
+                        <span class="jp-only">時空の織物と重力</span>
+                    </h2>
+                    <p class="vol-abstract">
+                        <span class="en-only">Strings vs Loops. The quest to unify Einstein's relativity with the
+                            microscopic chaos of the quantum world.</span>
+                        <span class="jp-only">超弦理論 vs ループ量子重力。アインシュタインの相対性理論と量子の微視的カオスを統一する探求。</span>
+                    </p>
+                </a>
+
+                <!-- Volume III: Multiverse -->
+                <a href="multiverse.html" class="volume-card">
+                    <span class="vol-num">VOL. 03 / THE MULTIVERSE</span>
+                    <h2 class="vol-title">
+                        <span class="en-only">Infinite Ensembles</span>
+                        <span class="jp-only">無限のアンサンブル</span>
+                    </h2>
+                    <p class="vol-abstract">
+                        <span class="en-only">Level I-IV multiverses, Eternal Inflation, and the Many-Worlds
+                            interpretation. Exploring the totality of existence.</span>
+                        <span class="jp-only">レベルI-IVのマルチバース、永久インフレーション、多世界解釈。存在の全貌を探る。</span>
+                    </p>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            &copy; 2026 THE PHYSICS NEXUS // BILINGUAL RESEARCH ARCHIVE
+        </footer>
+    </div>
+</body>
+
+</html>
