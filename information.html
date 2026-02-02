@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE INFORMATION FRONTIER | PHYSICS NEXUS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleLang() {
+            const html = document.documentElement;
+            const current = html.getAttribute('lang');
+            const next = current === 'en' ? 'jp' : 'en';
+            html.setAttribute('lang', next);
+            document.getElementById('lang-btn').innerText = next === 'en' ? 'JP / 日本語' : 'EN / English';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <header>
+            <div class="logo">PHYSICS_NEXUS // VOL_04</div>
+            <button id="lang-btn" class="lang-switch" onclick="toggleLang()">JP / 日本語</button>
+        </header>
+
+        <main class="article-body">
+            <h1 class="hero-title" style="font-size: 5rem;">INFORMATION</h1>
+            <p class="hero-subtitle">
+                <span class="en-only">The Fundamental Unit</span>
+                <span class="jp-only">根源的な単位</span>
+            </p>
+
+            <section class="content-section">
+                <h2 class="section-h">
+                    <span class="en-only">It From Bit</span>
+                    <span class="jp-only">ビットからの存在</span>
+                </h2>
+                <p class="para">
+                    <span class="en-only">John Archibald Wheeler, one of the greatest visionaries of the 20th century,
+                        proposed that every physical quantity derives its ultimate significance from bits—binary
+                        yes-or-no choices. In this view, particles and fields are secondary; information is the primary
+                        fabric of the universe. This "It from Bit" philosophy suggests that the acts of observation and
+                        measurement are what actually construct our physical reality.</span>
+                    <span
+                        class="jp-only">20世紀最大の先見者の一人、ジョン・アーチボルド・ウィーラーは、あらゆる物理量はその究極的な意味をビット—二進法のイエスかノーかの選択—から得ていると提案しました。この見方では、粒子や場は二次的なものであり、情報こそが宇宙の主要な織物です。この「It
+                        from Bit（ビットからの存在）」の哲学は、観測と測定という行為こそが、実際に私たちの物理的現実を構築していることを示唆しています。</span>
+                </p>
+                <div class="physics-equation en-only">S = k log W // Entropy is Information</div>
+                <div class="physics-equation jp-only">エントロピー ＝ 情報の欠如</div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-h">
+                    <span class="en-only">Quantum Entanglement & Complexity</span>
+                    <span class="jp-only">量子もつれと複雑性</span>
+                </h2>
+                <p class="para">
+                    <span class="en-only">Modern research into the relationship between entanglement and spacetime has
+                        led to the slogan "ER = EPR." This conjecture suggests that Einstein-Rosen bridges (wormholes)
+                        are equivalent to Einstein-Podolsky-Rosen pairs (entangled particles). In other words, geometry
+                        is woven from entanglement. The complexity of the quantum state might be what creates the volume
+                        of interior space in black holes, suggesting that our universe is a massive, interconnected
+                        quantum computer.</span>
+                    <span class="jp-only">量子もつれと時空の関係に関する現代の研究は、「ER =
+                        EPR」というスローガンを生みました。この予測は、アインシュタイン＝ローゼン橋（ワームホール）とアインシュタイン＝ポドルスキー＝ローゼン対（もつれた粒子）が等価であることを示唆しています。言い換えれば、幾何学はもつれから織りなされているのです。量子状態の複雑さが、ブラックホールの内部空間の体積を作り出している可能性があり、私たちの宇宙は巨大な、相互接続された量子コンピュータであると言えるかもしれません。</span>
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-h">
+                    <span class="en-only">Information & The Future of Physics</span>
+                    <span class="jp-only">情報と物理学の未来</span>
+                </h2>
+                <p class="para">
+                    <span class="en-only">As we push towards 100,000 words of collective understanding, one thing
+                        becomes clear: the boundaries between physics, mathematics, and information theory are
+                        dissolving. Whether we live in a string-theoretic bulk, a spin-network of loops, or a simulated
+                        ensemble, the currency of reality is data. The final theory will likely not be about matter, but
+                        about the rules that govern how information flows across the cosmic horizon.</span>
+                    <span
+                        class="jp-only">私たちが10万語に及ぶ共通理解を深める中で、一つのことが明らかになってきました。それは、物理学、数学、そして情報理論の境界が解消されつつあるということです。私たちが超弦理論的なバルク、ループのスピンネットワーク、あるいはシミュレーションされたアンサンブルのどれに住んでいようとも、現実の通貨はデータです。最終的な理論は、おそらく物質についてではなく、宇宙の地平線を越えて情報がどのように流れるかを支配する規則について語ることになるでしょう。</span>
+                </p>
+            </section>
+
+            <footer style="margin-top: 5rem;">
+                <a href="index.html" class="back-link" style="color: var(--accent); text-decoration: none;">
+                    <span class="en-only">← RETURN TO OBSERVATORY</span>
+                    <span class="jp-only">← 展望台に戻る</span>
+                </a>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>
